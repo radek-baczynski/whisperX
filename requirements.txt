@@ -1,7 +1,8 @@
 torch>=2
 torchaudio>=2
-faster-whisper @ git+https://github.com/PythonicCafe/faster-whisper.git@feature/large-v3
-transformers
+# faster-whisper @ git+https://github.com/PythonicCafe/faster-whisper.git@feature/large-v3
+faster-whisper @ https://github.com/PythonicCafe/faster-whisper/archive/refs/heads/feature/large-v3.zip#egg=faster-whisper
+transformers[torch]>=4.35.0
 pandas
 setuptools>=65
 nltk
