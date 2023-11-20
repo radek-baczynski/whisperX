@@ -69,7 +69,7 @@ class WhisperModel(faster_whisper.WhisperModel):
                 res.append([token for token in tk if token < tokenizer.eot])
             # text_tokens = [token for token in tokens if token < self.eot]
             print(f"{tokenizer.tokenizer.__class__.__module__}.{tokenizer.tokenizer.__class__.__name__}")
-            print(tokenizer.tokenizer)
+            # print(tokenizer.tokenizer)
             return tokenizer.tokenizer.decode_batch(res)
 
         text = decode_batch(tokens_batch)
